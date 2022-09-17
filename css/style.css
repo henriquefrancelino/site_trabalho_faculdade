@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+    color: #ffff;
+    text-decoration: none;
+}
+.menu {
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  background:  #000080;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+li {
+  display: inline-block;
+  color: white;
+  width: 100%;
+  height: 100%;
+ line-height: 50px;
+ text-align: center;
+ cursor: pointer;
+
+}
+
+li:hover{
+    background-color: #000090;
+}
+.setor-inicial {
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  flex-direction: row;
+}
+.setor-inicial-esq {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.setor-inicial-esq img {
+  width: 95%;
+  height: 90%;
+}
+
+.setor-inicial-dir {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px 50px;
+}
+
+.setor-inicial-dir h1{
+    text-align: left;
+}
+
+.sec02 {
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #000030;
+  font-size: 2rem;
+  color: #ffff;
+  margin-bottom: 10px;
+}
+
+.area-itens {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.row-area-itens {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+.item {
+    cursor: pointer;
+  width: 25%;
+  height: 300px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.item img{
+    width: 100%;
+    height: 80%;
+   
+}
+
+.desc-item{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.item:hover{
+    box-shadow: 1px 0px 5px #000030;
+}
+
+@media only screen and (max-width: 700px) {
+  .menu {
+    background-color: white;
+  }
+  li {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #000090;
+    margin-bottom: 1px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li:hover {
+    background-color: #000080;
+  }
+  ul {
+    flex-direction: column;
+  }
+  .menu {
+    height: auto;
+  }
+  .setor-inicial {
+    margin-top: 30px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .setor-inicial-esq {
+    width: 100%;
+  }
+
+  .setor-inicial-esq img {
+    width: 100%;
+  }
+
+  .setor-inicial-dir {
+    width: 100%;
+    padding: 30px;
+    
+    
+  }
+
+  .item {
+    width: 40%;
+  }
+
+  .row-area-itens {
+    flex-wrap: wrap;
+  }
+
+}
